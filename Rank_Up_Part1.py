@@ -38,3 +38,28 @@ def descending_order(num):
         newst += y
     return newst
 print(descending_order(4654971))
+
+
+# 3. Trolls are attacking your comment section!
+# A common way to deal with this situation is to remove all of the vowels from the trolls' comments, neutralizing the threat.
+# Your task is to write a function that takes a string and return a new string with all vowels removed.
+# For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
+
+
+def disemvowel(txt):
+    vowels = "aeiouAEIOU"
+    result = ""
+
+    for char in txt:
+        if char not in vowels:
+            result += char
+    return result        
+
+print(disemvowel("how old are you"))
+
+
+def disemvowel_(tx):
+    vowels = "aeiouAEIOU"
+    x = "".join([char for char in tx if char not in vowels])
+    return x
+print(disemvowel_("how old are you"))
